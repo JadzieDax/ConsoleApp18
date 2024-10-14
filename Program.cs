@@ -10,12 +10,12 @@ namespace ConsoleApp13
     {
         static void Main(string[] args)
         {
-            double result = SqrtCalc(3, 2) + SqrtCalc(5, 3) + SqrtCalc(11, 7);
+            double result = SqrtCalculation(3, 2) + SqrtCalculation(5, 3) + SqrtCalculation(11, 7);
             Console.WriteLine($"Результат: {result:F3}");
             Console.ReadLine();
         }
 
-        static double SqrtCalc(double a, double b)
+        static double SqrtCalculation(double a, double b)
         {
             return (Math.Sqrt(a) - Math.Sqrt(b)) / (Math.Sqrt(a) + Math.Sqrt(b));
         }
